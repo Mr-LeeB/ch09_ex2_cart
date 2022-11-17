@@ -14,7 +14,7 @@ public class CartServlet extends HttpServlet {
             HttpServletResponse response)
             throws ServletException, IOException {
         
-        ServletContext sc = getServletContext();
+        ServletContext sc = this.getServletContext();
         
         // get current action
         String action = request.getParameter("action");
