@@ -49,7 +49,7 @@ public class CartServlet extends HttpServlet {
                 quantity = 1;
             }
 
-            String path = sc.getRealPath("/WEB-INF/products.txt");
+            String path = sc.getRealPath("/products.txt");
             Product product = ProductIO.getProduct(productCode, path);
 
             LineItem lineItem = new LineItem();
